@@ -82,6 +82,7 @@ menu_options=(
 	"查看/etc/fstab文件"	
 	"测试挂载分区"
 	"编辑SMB共享文件夹"
+ 	"1分钟后关闭屏幕"
 	
 )
 
@@ -91,10 +92,16 @@ commands=(
 	["列出所有磁盘及其分区信息"]="display_disk_info"
 	["查看详细分区信息"]="view_disk_info"
 	["查看/etc/fstab文件"]="view_fstab_file"
-    ["测试挂载分区"]="test_disk_mount"
+    	["测试挂载分区"]="test_disk_mount"
 	["编辑SMB共享文件夹"]="edit_smb_conf"
+ 	["1分钟后关闭屏幕"]="off_display"
 
 )
+#1分钟后关闭屏幕
+off_display() {
+	sudo setterm -blank 1
+}
+
 #编辑SMB共享文件夹
 edit_smb_conf() {
 	sudo nano /etc/samba/users/1000.share.conf
