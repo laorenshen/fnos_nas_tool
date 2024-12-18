@@ -221,7 +221,7 @@ show_menu() {
     echo '
     ***********  laorenshen NAS 工具箱v1.0  ***************
     适配系统: 飞牛os  
-    
+    开源地址： https://github.com/laorenshen/fnos_nas_tool
     '
     
     echo -e "${GREEN_LINE}"
