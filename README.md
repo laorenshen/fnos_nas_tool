@@ -8,3 +8,10 @@ V1.0  2024.12.18 基本功能：
               5. 测试挂载分区
               6. 编辑SMB共享文件夹
 
+
+
+安装：
+
+sudo wget -qO laov1.0.sh https://mirror.ghproxy.com/https://github.com/laorenshen/fnos_nas_tool/blob/main/laov1.0.sh && chmod +x laov1.0.sh && ./laov1.0.sh
+
+
